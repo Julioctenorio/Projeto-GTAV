@@ -1,0 +1,228 @@
+body {
+  background-color: #282828;
+  color: #fff;
+}
+
+.cabecalho {
+  height: 5rem;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.85rem 5rem 0;
+  border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo {
+  display: flex;
+  gap: .94rem;
+  height: 2rem;
+}
+
+.cabecalho .menu {
+  display: flex;
+  gap: .94rem;
+}
+
+.cabecalho .menu li a {
+  padding: 1.875rem;
+  color: #e8e8e8;
+  font-weight: bolder;
+  font-size: .94rem;
+  font-family: 'Chalet';
+}
+
+.cabecalho .menu li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 5rem);
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.home .informacoes {
+  position: absolute;
+  z-index: 1;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 5rem 5rem 10rem;
+  max-width: 48.75rem;
+}
+
+.home .informacoes img {
+  max-width: 9.375rem;
+}
+
+.home .informacoes .lista-de-jogos {
+  display: flex;
+  gap: 3rem;
+}
+
+.home .informacoes .title {
+  font-family: 'ChaletComprime';
+  font-size: 3.44rem;
+}
+
+.home .informacoes .text {
+  font-family: 'chalet';
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.btn-buy,
+.btn-plataform {
+  background-color: rgba(255, 255, 255, .1);
+  border: 0.5px solid #fff;
+  border-radius: .25rem;
+  font-family: 'ChaletComprime';
+  font-size: 1.5625rem;
+  text-align: center;
+  padding: 1.25rem 2.5rem;
+  text-transform: uppercase;
+  width: 50%;
+  transition: all .3s ease-in;
+}
+
+.btn-plataform {
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.compre-ja .capa-do-jogo {
+  width: 16.875rem;
+}
+
+.compre-ja {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 3.125rem;
+}
+
+.compre-ja .title {
+  font-family: 'ChaletComprime';
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+}
+
+.compre-ja .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  width: 50%;
+  border-radius: 10px;
+  padding: 5rem;
+  gap: 2.5rem;
+}
+
+.compre-ja .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.compre-ja .informacoes h3 {
+  font-family: 'ChaletComprime';
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.compre-ja .informacoes p {
+  color: #e8e8e8;
+  font-family: 'Chalet';
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.compre-ja .btn-plataform .plataforms {
+  margin-top: .625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all .3s ease-in;
+  display: none;
+  opacity: 0;
+}
+
+.compre-ja .btn-plataform .plataforms.ativo {
+  display: flex;
+  opacity: 1;
+}
+
+.compre-ja .btn-plataform .plataforms li {
+  padding: 1.25rem;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(1) {
+  border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(1):hover {
+  background-color: #00439c;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(2) {
+  border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(2):hover {
+  background-color: #387a26;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(3) {
+  border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(3):hover {
+  background-color: #00439c;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(4) {
+  border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(4):hover {
+  background-color: #387a26;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(5) {
+  border: 1px solid #fcaf17;
+}
+
+.compre-ja .btn-plataform .plataforms li:nth-child(5):hover {
+  background-color: #fcaf17;
+}
